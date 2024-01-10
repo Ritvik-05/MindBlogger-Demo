@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+
+.sec1 {
+    background-color: #070044;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    height: 35vw;
+    background-color: white;
+    width: 30vw;
+    
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    /* text-align: center; */
+    border-radius: 30px;
+    padding: 20px 70px;
+}
+
+#mindblogger2 {
+    font-size: 45px;
+    text-align: center;
+
+}
+
+
+.login h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.6vw;
+    font-size: 25px;
+    text-align: center;
+    margin: 25px 0px;
+}
+
+.login h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.6vw;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+
+.login input {
+    /* border: 0px; */
+    outline: none;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.244);
+    width: 230px;
+    margin-top: 10px;
+    border-radius: 4px;
+    height: 25px;
+    border: none;
+}
+
+.login button {
+    height: 35px;
+    margin-top: 25px;
+    margin-left: 60px;
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    text-align: center;
+    /* transform: translate(-50%, 270%); */
+    width: 100px;
+    border-radius: 20px;
+    background-color: #F41AFF;
+    border: 0px;
+    color: white;
+}
+
+.login h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.6vw;
+    font-size: 11px;
+    color: rgb(166, 166, 166);
+    text-align: center;
+    font-weight: 400;
+    margin-top: 70px;
+}
+
+
+.login h5 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.6vw;
+    font-size: 11px;
+    color: rgb(166, 166, 166);
+    text-align: center;
+    font-weight: 400;
+
+}
+
+.login img {
+    height: 50px;
+    margin-left: 30px;
+}
+
+
+@media(max-width:600px) {
+    .sec1 {
+        background-color: #070044;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login {
+        height: 80%;
+        background-color: white;
+        width: 85%;
+        border-radius: 30px;
+        padding: 4vmax 5%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    #mindblogger2 {
+        font-size: 10vmax;
+        text-align: center;
+    }
+
+
+    .login h2 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 5vmax;
+        text-align: center;
+        margin: 1vmax 0px;
+    }
+
+    .login h3 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 3vmax;
+        font-weight: 400;
+        margin-top: 2vmax;
+    }
+
+    .login input {
+        border: 0px;
+        box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.244);
+        height: 6vmax;
+        outline: none;
+        width: 70vw;
+        margin-top: 1.5vmax;
+        border-radius: 4px;
+    }
+
+    .login button {
+        height: 8vmax;
+        margin-left: 0px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , 300%);
+        width: 100px;
+        border-radius: 20px;
+        background-color: #F41AFF;
+        border: 0px;
+        color: white;
+    }
+
+    .login h4 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.6vmax;
+        color: rgb(166, 166, 166);
+        text-align: center;
+        font-weight: 400;
+        margin-top: 8vmax;
+    }
+
+
+    .login h5 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 2vmax;
+        color: rgb(166, 166, 166);
+        text-align: center;
+        font-weight: 400;
+        margin-top: 12vmax;
+    }
+
+}

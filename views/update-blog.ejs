@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="/stylesheets/write.css">
+<%- include("partials/header") %>
+    <%- include("partials/nav")%>
+        <div class="sec1">
+            <div class="sec1-form">
+                <form class="write-form" action="/update-blog/<%= blog._id %>" method="post" enctype="multipart/form-data">
+                    <img class="dp"
+                        src="https://images.unsplash.com/photo-1687360441063-27492a092519?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                        alt="">
+                    <h1>NAME</h1> <br><br>
+                    <input name="heading" class="heading" type="text" placeholder="Subject of the blog" value="<%= blog.heading %>"><br><br> 
+
+                    <input type="file" name="image" id="blog-image">
+
+                    <input type="hidden" name="oldimage" id="blog-image" value="<%= blog.image %>">
+
+                    <br><br>
+
+                    <textarea name="content" class="content" placeholder="Content" cols="30" rows="10" ><%= blog.content %></textarea><br><br>
+                    <button type="submit" id="publish">Update</button>
+                </form>
+            </div>
+        </div>
+
+        <%- include("partials/footer") %>

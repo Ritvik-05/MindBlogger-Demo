@@ -1,0 +1,27 @@
+<div class="nav">
+
+  <a href="/"><h1 class="mindblogger"><span id="blog-pink">Art</span>iculate</h1></a>
+  <div>
+    
+    <a href="/"><h1>Home</h1></a>
+    <a href="/topBlogs"><h1>Top Articles</h1></a>
+    <% if(!isuser){%>
+      <a href="/login"><h1>Login</h1></a>
+      <a id="signup" href="/signup"><h1>Sign up</h1></a>
+      <% }else{ %>
+        <a href="/myBlogs"><h1>My Articles</h1></a>
+        <a href="/write"><h1>Write</h1></a>
+          <a href="/logout"><h1>Log out</h1></a>
+
+          <% } %>
+    <% if(title == "MindBlogger: Top Blogs"){%>
+
+          <!-- <form action=""> -->
+            <input id="search-tab" onkeyup="search_heading()" type="text" name="search" placeholder="Search..">
+          <!-- </form> -->
+          <% } %>
+
+  </div>
+</div>
+
+

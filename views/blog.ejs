@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="/stylesheets/blog.css">
+
+<%- include("partials/header") %>
+
+    <%- include("partials/nav")%>
+
+        <div class="sec2">
+            <h1><%= blog.heading %></h1>
+            <img src=" /images/<%= blog.image %>" alt="">
+            <div class="S2-content">
+                <p><%= blog.content %></p>
+            </div>
+        </div>
+        <%- include("partials/footer") %>

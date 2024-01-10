@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body,
+  html {
+    width: 100%;
+    height: 100%;
+  }
+
+  .sec1{
+    width: 100%;
+    height: 100%;
+    background-color: #070044;
+}
+
+.sec1-form{
+  padding: 80px 60px;
+}
+
+.write-form{
+  background-color: white;
+    height: 80%;
+    padding: 25px 35px;
+    border: 1px solid gray;
+    border-radius: 20px;
+  }
+
+  .dp{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .write-form h1 {
+    display: inline-block;
+  font-family: 'Roboto', sans-serif;  
+  }
+
+  .content{
+    height: 200px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.329);
+    font-family: montserrat;
+
+  }
+
+  .heading{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.329);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  #blog-image{
+    border-radius: 5px;
+    padding: 2px 2px;
+    width: 200px;
+  }
+
+
+  #publish{
+    height: 35px;
+    width: 100px;
+    border-radius: 20px;
+    background-color: #F41AFF;
+    border: 0px;
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+  }

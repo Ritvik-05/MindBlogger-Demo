@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="/stylesheets/signup.css">
+
+<%- include("partials/header") %>
+
+  <%- include("partials/nav")%>
+
+    <div class="sec1">
+      <div class="login">
+        <h1 id="mindblogger2" class="mindblogger">Mind<span id="blog-pink">Blog</span>ger</h1>
+        <h2>
+          Sign up
+        </h2>
+        <form action="/signup" method="post">
+          <h3>Username </h3>
+          <input type="text" name="username" id="username">
+          <h3>E-mail Address</h3>
+          <input type="email" name="email" id="email">
+          <h3>Password</h3>
+          <input type="password" name="password" id="password">
+          <button>Sign up</button>
+        </form>
+        <!-- <h4>OR</h4>
+        <img src="https://global.discourse-cdn.com/business5/uploads/webflow1/original/3X/2/4/24bc102eccbabdb30b5ec93447732ead235d5549.png"
+          alt=""> -->
+      </div>
+    </div>
+
+
+
+    <%- include("partials/footer") %>

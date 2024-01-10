@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="/stylesheets/myBlogs.css">
+<%- include("partials/header") %>
+<%- include("partials/nav")%>
+<div class="sec1">
+      <div class="written">
+        <% blogs.forEach((blog , index )=>{ %>
+        <% if(blog.userid == isuser._id){ %>
+          
+          <a href="/blog/<%= blog._id %>">
+            <div class="block">
+              <div class="contentAndimage">
+                <div class="content">
+                  <h1>
+                    <img class="profile-photo"
+                      src="https://media.istockphoto.com/id/1300845620/vector/user-icon-flat-isolated-on-white-background-user-symbol-vector-illustration.jpg?s=612x612&w=0&k=20&c=yBeyba0hUkh14_jgv1OKqIH0CCSWU_4ckRkAoy2p73o="
+                      alt="">
+                     <%= blog.heading%>
+                  </h1>
+                  <!-- <h2>Written by: Username</h2> -->
+                  <p>
+                    <%= blog.content%>
+                  </p>
+                </div>
+                <div class="image">
+                  <img src="/images/<%= blog.image %>" alt="">
+                </div>
+              </div>
+              <div class="update-delete">
+                <a href="/update-blog/<%= blog._id %>"><button>Update</button></a>
+                <a href="/delete-blog/<%= blog._id%>"><button>Delete</button></a>
+              </div>
+            </div>
+          </a>
+          <% }})%>
+      </div>
+    </div>
+
+
+    <%- include("partials/footer") %>

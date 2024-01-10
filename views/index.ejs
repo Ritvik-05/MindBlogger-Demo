@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="/stylesheets/style.css">
+
+<%- include("partials/header") %>
+
+  <%- include("partials/nav")%>
+
+    <div class="sec1">
+      <div class="S1-content">
+        <h1>
+          Explore
+        </h1>
+        <h1 id="new-pink">New</h1>
+        <h1>Perspective</h1>
+      </div>
+    </div>
+    <div class="sec2">
+      <h1>The Craft of Article Writing: Weaving Words into Wisdom</h1>
+      <img src="https://www.travelpayouts.com/blog/wp-content/uploads/2019/08/content-creation.jpg" alt="">
+      <!-- <img src="/images/what is blog.jpg" alt=""> -->
+
+      <div class="S2-content">
+      <p>
+In the digital realm, one art stands out—article writing. With the tap of keys, writers begin. Each sentence is a brushstroke, paragraphs a masterpiece. It's intellect and emotion, where ideas crescendo, emotions echo. The writer is an architect, molding concepts, answering questions. <br><br>
+Behind every article stands an author—an artisan and storyteller. They craft narratives, shaping concepts with precision. A fusion of analysis and creativity, each phrase and sentence is a deliberate choice, a foundation for ideas that captivate, educate, and inspire.
+<br><br>
+Articles transform readers and writers. A piece can ignite curiosity, awaken epiphanies, spark change. Each article is a lantern, shedding light on uncharted corners of the mind.
+Behind every article stands an author—an artisan and storyteller. They shape concepts with precision. A fusion of analysis and creativity, each phrase captivates, educates, inspires. <br><br>
+Article writing stitches ideas, forming a mosaic of wisdom. An art form transcending eras, a timeless embodiment of human creativity.
+      </p>
+      </div>
+    </div>
+        <div class="sec3">
+          <h1>Recent Articles</h1>
+          <div class="blocks">
+            <!-- <div class="left"> -->
+            <% blogs.forEach((blog , index)=>{ %>
+
+             <a href="/blog/<%= blog._id %>"><div class="block">
+                <h4>
+                  <%= blog.heading%>
+                </h4>
+                <h2>By: <%= blog.username  %></h2>
+
+                <p>
+                  <%= blog.content%>
+                </p>
+              </div></a>
+              <% })%>
+          </div>
+        </div>
+
+        </div>
+          <!-- <div class="sec4">
+          </div> -->
+        <%- include("partials/footer") %>

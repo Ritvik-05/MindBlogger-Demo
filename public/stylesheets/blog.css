@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+  color: black;
+  box-sizing: border-box;
+  text-align: center;
+  }
+  
+  body,
+  html {
+    width: 100%;
+    height: 100%;
+  }
+  
+.sec2{
+    /* height: 210%; */
+    width: 100%;
+    padding: 8vw 28vw;
+    font-family: 'Roboto', sans-serif;   
+  
+  }
+  
+  .sec2 h1{
+    font-size: 3vw;
+  }
+  
+  .sec2 img{
+    width: 32vw;
+    margin: 3vw 0vw;
+    /* width: 100px; */
+  }
+  
+  .sec2 h2{
+    margin-top: 2.5vw ;
+    margin-bottom: 0.5vw;
+    font-size: 1.8vw;
+  }
+  
+  .sec2 p{
+    font-size: 1.2vw;
+  }
+  
