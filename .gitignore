@@ -1,11 +1,11 @@
-# Node.js
-node_modules
-package-lock.json
+# # Node.js
+# node_modules
+# package-lock.json
 
-# MongoDB
-.env
+# # MongoDB
+# .env
 
-# Ignore compiled binaries (bin folder)
-bin
+# # Ignore compiled binaries (bin folder)
+# bin
 
 
